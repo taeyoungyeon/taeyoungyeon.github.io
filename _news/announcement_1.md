@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2024-09-06 00:00:00-0400
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement.
+Arrived at Chicago! Looking forward to my research experience at here. :smile: :sparkles: 
