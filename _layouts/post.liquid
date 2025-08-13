@@ -64,7 +64,9 @@ layout: default
   <article class="post-content">
     {% if page.toc and page.toc.beginning %}
       <div id="table-of-contents">
-        {% toc %}
+        <!-- Table of contents will be generated via JavaScript -->
+        <h2>Table of Contents</h2>
+        <nav id="toc-nav"></nav>
       </div>
       <hr>
     {% endif %}
@@ -97,3 +99,43 @@ layout: default
     {% include giscus.liquid %}
   {% endif %}
 </div>
+
+{% if page.toc and page.toc.beginning %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Generate table of contents
+  const tocNav = document.getElementById('toc-nav');
+  const content = document.getElementById('markdown-content');
+  
+  if (tocNav && content) {
+    const headings = content.querySelectorAll('h2, h3, h4');
+    if (headings.length > 0) {
+      const tocList = document.createElement('ul');
+      
+      headings.forEach(function(heading) {
+        // Create an ID if the heading doesn't have one
+        if (!heading.id) {
+          heading.id = heading.textContent.toLowerCase()
+            .replace(/[^\w\s-]/g, '')
+            .replace(/\s+/g, '-')
+            .trim();
+        }
+        
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        a.href = '#' + heading.id;
+        a.textContent = heading.textContent;
+        
+        // Add class based on heading level for styling
+        li.className = 'toc-' + heading.tagName.toLowerCase();
+        
+        li.appendChild(a);
+        tocList.appendChild(li);
+      });
+      
+      tocNav.appendChild(tocList);
+    }
+  }
+});
+</script>
+{% endif %}
