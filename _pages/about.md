@@ -25,4 +25,4 @@ I am currently serving as a **Post-Baccalaureate Research Fellow** at **Northwes
 
 My research interests include **Human-Computer Interaction (HCI)**, **On-Device Machine Learning (ML)**, **Ubiquitous Computing**, and **real-time healthcare applications**. 
 
-**I am actively seeking Computer PhD positions for Fall 2026.**
+**I am actively seeking CS PhD positions starting at Fall 2026.**
