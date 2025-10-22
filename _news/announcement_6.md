@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2025-09-12 00:00:00-0400
+date: 2025-07-07 00:00:00-0400
 inline: true
 related_posts: false
 ---
 
-Submitted a paper to IEEE VR 2026. Fingers crossed!
+My first first author academic paper (WatchHAR: Real-time On-device Human Activity Recognition System for Smartwatches) was accepted to ICMI'25. Check my homepage for details.
