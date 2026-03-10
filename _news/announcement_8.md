@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Submitted a paper to CVPR 2025. Fingers crossed!
+Submitted a paper to CVPR 2025.

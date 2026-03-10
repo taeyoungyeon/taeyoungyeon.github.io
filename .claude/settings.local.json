@@ -7,7 +7,15 @@
       "Bash(git add:*)",
       "Bash(git commit:*)",
       "Bash(git push:*)",
-      "Bash(git mv:*)"
+      "Bash(git mv:*)",
+      "Bash(bundle exec jekyll serve:*)",
+      "Bash(ruby --version:*)",
+      "Bash(export PATH=\"$HOME/.rbenv/shims:$PATH\")",
+      "Bash(rbenv global:*)",
+      "Bash(gem install:*)",
+      "Bash(bundle install:*)",
+      "Bash(conda run:*)",
+      "Bash(pkill:*)"
     ],
     "deny": [],
     "defaultMode": "acceptEdits"
