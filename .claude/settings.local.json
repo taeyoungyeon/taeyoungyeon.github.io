@@ -15,7 +15,9 @@
       "Bash(gem install:*)",
       "Bash(bundle install:*)",
       "Bash(conda run:*)",
-      "Bash(pkill:*)"
+      "Bash(pkill:*)",
+      "Bash(ls:*)",
+      "Bash(xargs:*)"
     ],
     "deny": [],
     "defaultMode": "acceptEdits"
