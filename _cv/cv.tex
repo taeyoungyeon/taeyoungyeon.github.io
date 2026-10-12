@@ -1,0 +1,101 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Professional Academic CV
+% Clean, consistent formatting
+% Toggle between PUBLIC (website) and PRIVATE (applications) versions
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[11pt,letterpaper]{article}
+\usepackage[left=0.7in,top=0.45in,right=0.7in,bottom=0.45in]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% TOGGLE THIS FOR PUBLIC/PRIVATE VERSION
+% \publictrue  = PUBLIC CV (for website) - hides manuscripts under review/in preparation
+% \publicfalse = PRIVATE CV (for applications) - shows all manuscripts
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newif\ifpublic
+\publicfalse  % Change to \publicfalse for application CV
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Remove all paragraph indentation and spacing
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\pagestyle{empty}
+
+% Section formatting - consistent left alignment
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\vspace{2pt}\hrule\vspace{2pt}]
+\titlespacing{\section}{0pt}{4pt}{0pt}
+
+% Custom formatting commands
+\newcommand{\entry}[4]{%
+\textbf{#1} \hfill #2 \\
+\textit{#3} \hfill \textit{#4}
+\vspace{2pt}
+}
+
+\begin{document}
+
+% Header - left aligned
+{\Large\textbf{Taeyoung Yeon}}
+\href{mailto:taeyoungyeon@nyu.edu}{taeyoungyeon@nyu.edu} $\bullet$ \href{https://taeyoungyeon.github.io}{taeyoungyeon.github.io} \\[2pt]
+\mbox{}\hfill{\footnotesize\textit{Last updated: August 23, 2026}}
+
+\vspace{4pt}
+
+\section{Research Interests}
+Human-Computer Interaction, Machine Learning for Human Sensing, On-Device AI
+
+\section{Education}
+\entry{New York University, Tandon School of Engineering}{September 2026 - Present}{Ph.D. Student in Human-Centered Technology, Innovation \& Design, advised by Prof. Vedant Das Swain}{Brooklyn, NY}
+\\
+\entry{Seoul National University}{March 2017 - February 2024}{Bachelor of Science in Computer Science and Engineering}{Seoul, South Korea}
+\\
+Overall GPA: 3.53/4.00, \textit{Graduated \textbf{cum laude}}
+
+\section{Research Experience}
+\entry{Post-Baccalaureate Research Fellow}{September 2024 - June 2026}{Northwestern University, SPICE Lab, advised by Prof. Karan Ahuja}{Evanston, IL}
+\begin{itemize}[leftmargin=1.5em,nosep,topsep=2pt]
+\item Contributed to 5 research publications spanning on-device ML, human activity sensing, and real-time XR avatars.
+\item Presented research demonstrations to industry partners: \textbf{Google Platform and Experiences, Apple, Qualcomm XR, Adobe Research, Dolby Studios}.
+\end{itemize}
+
+\section{Professional Experience}
+\entry{Full Stack Game Developer (Alternative Military Service)}{September 2019 - February 2023}{Awesomepiece}{Seoul, South Korea}
+
+\entry{CUDA Engineer Intern}{July 2019 - August 2019}{MindsLab}{Pangyo, South Korea}
+
+\section{Publications}
+\textbf{1.} Chenfeng Gao$^*$, \underline{\textbf{Taeyoung Yeon}}$^*$, Sungheon Park, Vasco Xu, Anish Prabhu, Mar Gonzalez-Franco, Karan Ahuja. \textbf{FlowAvatar: Real-Time Full-Body Avatars from Sparse Egocentric Inputs on Consumer XR Devices.} \textit{To appear in Proceedings of the 2026 IEEE International Symposium on Mixed and Augmented Reality (ISMAR '26).} 2026.
+
+\vspace{4pt}
+
+\textbf{2.} Yiquan Li$^*$, \underline{\textbf{Taeyoung Yeon}}$^*$, Chenfeng Gao, Vasco Xu, Xuanyou Liu, Karan Ahuja. \textbf{MARIO: Motion-Augmented Real-Time Multi-Sensor Inertial Odometry.} \textit{Proceedings of the 2026 IEEE/CVF Conference on Computer Vision and Pattern Recognition, Findings (CVPR '26).} 2026.
+
+\vspace{4pt}
+
+\textbf{3. Taeyoung Yeon}, Vasco Xu, Hank Hoffman, Karan Ahuja. \textbf{WatchHAR: Real-time On-device Human Activity Recognition System for Smartwatches.} \textit{Proceedings of the 27th ACM International Conference on Multimodal Interaction (ICMI '25).} 2025.
+
+\section{Technical Skills}
+\textbf{Programming Languages:} Python, Java, C\#, JavaScript, Kotlin, Swift, CUDA \\
+\textbf{Machine Learning:} TensorFlow, PyTorch, CoreML, scikit-learn, model optimization \\
+\textbf{Mobile \& VR Development:} Unity (Meta SDK), iOS/Android development, cross-platform frameworks \\
+\textbf{Backend \& Infrastructure:} Spring Boot, Netty, Django, React, MySQL, Google Cloud Platform
+
+\section{Academic Services}
+\textbf{Reviewer:} ICMI 2026, UbiComp/IMWUT 2026 \textit{(2 Outstanding Reviewer Recognitions)}
+
+\section{References}
+{\small
+\textbf{Prof. Vedant Das Swain} \\
+Assistant Professor, Department of Technology Management and Innovation, NYU Tandon School of Engineering \\
+\href{mailto:v.das.swain@nyu.edu}{v.das.swain@nyu.edu}
+
+\vspace{3pt}
+
+\textbf{Prof. Karan Ahuja} \\
+Lisa Wissner-Slivka \& Benjamin Slivka Assistant Professor, Department of Computer Science, Northwestern University \\
+\href{mailto:kahuja@northwestern.edu}{kahuja@northwestern.edu}
+\par}
+\end{document}
