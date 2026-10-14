@@ -20,6 +20,6 @@ social: true # includes social icons at the bottom of the page
 
 I am a **PhD student** at **NYU Tandon** in the [**Human-Centered Technology Innovation and Design**](https://engineering.nyu.edu/academics/programs/human-centered-technology-innovation-design-phd) program, advised by Professor [**Vedant Das Swain**](https://vedantswain.com). Previously, I served as a Post-Baccalaureate Research Fellow at Northwestern University, advised by Professor [**Karan Ahuja**](https://karan-ahuja.com). I earned a Bachelor of Science in Computer Science and Engineering from **Seoul National University**. Additionally, I worked at the mobile game company, [**Awesomepiece**](https://awesomepiece.com), as a Full Stack Game Developer.
 
-My research interests include **Human-Computer Interaction (HCI)**, **real-time interaction with AI agents**, **just-in-time interventions**, **passive human sensing on wearables** (smartwatches, AR glasses, XR headsets), **health sensing**, and **on-device machine learning (ML)**.
+My research targets **practical human sensing**: sensing a person's context with **consumer devices** for real-time interactions, using only built-in sensors such as IMUs and microphones. I use this sensing to add human context for a natural flow of **interaction with AI agents**.
 
 📄 You can view and download my full CV [**here**](/assets/pdf/CV_taeyoungyeon.pdf).
